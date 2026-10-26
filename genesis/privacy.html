@@ -37,10 +37,13 @@
 <p>When a player reports a colony chat message, a copy of the message, its author's player name and the reason are kept for review. Three reports hide a message until it is reviewed. If a report is upheld, the author's chat can be paused for seven days.</p>
 
 <h2>The Android and iOS apps</h2>
-<p>The GENESIS apps from Google Play and the App Store keep your species in the app's storage on your phone and back it up with the cloud save described above. They have no tournament account, colonies, statistics, crash reports, feedback form, ads or purchases, and they send nothing to the GENESIS server. When more online features, ads or purchases come to the apps, this notice will say what they send before the update is released.</p>
+<p>The GENESIS apps from Google Play and the App Store keep your progress in the app's storage on your phone and back it up with the cloud save described above. They have no tournament account, colonies, statistics, crash reports, feedback form or ads, and they send nothing to the GENESIS server.</p>
 
-<h2>Advertising and purchases</h2>
-<p>This build shows placeholder ads and has no payment provider, so no ad network or payment service receives data from it. When an ad network or payment provider is connected, it will process data under its own privacy policy, which will be linked here, and personalised ads will only be shown with your consent.</p>
+<h2>Purchases in the Android app</h2>
+<p>Purchases and the Command Pass subscription are paid through Google Play, which handles your payment details under <a href="https://policies.google.com/privacy">Google's privacy policy</a>; we never see them. So that a purchase cannot be faked or used twice, the app sends Google's purchase token, with your cloud save's anonymous account ID, to our purchase check on Google Firebase (Cloud Functions, in the European Union). It confirms the purchase with Google and records, with your anonymous account ID: the product, Google's order number, a one-way fingerprint of the purchase token, the time, and what the purchase added to your account. Each order also carries a one-way fingerprint of your anonymous account ID, so Google's records show which account it belongs to. These records are kept as long as your cloud save, and for as long as tax and accounting law requires.</p>
+
+<h2>Advertising</h2>
+<p>The web version may show placeholder ads; no ad network receives data from it. If an ad network is connected, it will process data under its own privacy policy, which will be linked here, and personalised ads will only be shown with your consent.</p>
 
 <h2>Your choices and rights</h2>
 <ul>
@@ -50,7 +53,7 @@
 </ul>
 
 <h2>Children</h2>
-<p>GENESIS is not directed at children under 13 (16 in some countries), and the apps collect no personal data from anyone: the cloud save holds only game progress and an anonymous account ID.</p>
+<p>GENESIS is not directed at children under 13 (16 in some countries), and the apps never ask for a name, email address or contact details: the cloud save holds game progress and an anonymous account ID, and purchases add only the records described above.</p>
 </main>
 </body>
 </html>
